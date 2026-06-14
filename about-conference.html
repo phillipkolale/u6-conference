@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Themes & Sub-themes | U6+ 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #080710;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        #webgl-helix-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        .content-layer {
+            position: relative;
+            z-index: 10;
+        }
+        .glass-card {
+            background: rgba(13, 11, 26, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .text-gradient-purple {
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtheme-item {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .subtheme-item::before {
+            content: '•';
+            position: absolute;
+            left: 0.5rem;
+            color: #a855f7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3D Helix Background Container -->
+    <div id="webgl-helix-container"></div>
+
+    <div class="content-layer">
+        
+        <!-- Navigation Bar -->
+        <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-xl font-extrabold tracking-wider text-white">U6+ <span class="text-purple-500">2026</span></a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="text-purple-400 font-bold">Home</a>
+                <a href="about-consortium.html" class="hover:text-purple-400 transition-colors">The Consortium</a>
+                <a href="about-conference.html" class="hover:text-purple-400 transition-colors">Themes & Call</a>
+                <a href="accommodation.html" class="hover:text-purple-400 transition-colors">Accommodation</a>
+                <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact Hub</a>
+            </div>
+            <a href="about-conference.html#call" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white text-xs font-bold px-5 py-2.5 rounded-full uppercase tracking-wider transition-all">
+                Submit Abstract
+            </a>
+        </nav>
+
+        <!-- Dynamic Lead Banner -->
+        <header class="max-w-4xl mx-auto px-4 pt-16 pb-12 text-center">
+            <div class="space-y-6">
+                <span class="text-purple-400 font-bold tracking-widest text-xs uppercase bg-purple-500/10 px-4 py-1.5 rounded-full inline-block">
+                    Theme Architecture & Sub-Themes
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    "African challenges do not respect borders, <br><span class="text-gradient-purple">neither should our solutions."</span>
+                </h1>
+                <p class="text-gray-400 text-sm max-w-2xl mx-auto">
+                    The 10th Annual U6+ Conference theme maps cleanly across eight rigorous thematic fields designed to integrate modern technologies with localized indigenous paradigms.
+                </p>
+            </div>
+        </header>
+
+        <!-- Grid of the 8 Main Axes -->
+        <section id="axes" class="max-w-6xl mx-auto px-4 py-6">
+            <div class="text-center mb-8">
+                <h2 class="text-xl font-bold tracking-wider uppercase text-gray-300">Respective Academic Breakouts</h2>
+                <p class="text-xs text-gray-500 mt-1">Select an axis category below to view specific research scopes and subthemes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Axis 1 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-emerald-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-emerald-400">
+                        <i class="fa-solid fa-wheat-straw text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">1. Agriculture & Food Systems</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">Precision agriculture, data, and digital platforms</p>
+                        <p class="subtheme-item">Indigenous farming knowledge and seed systems</p>
+                        <p class="subtheme-item">Citizen science and agro‑ecology for food security</p>
+                        <p class="subtheme-item">Agri‑entrepreneurship and value addition</p>
+                    </div>
+                </div>
+
+                <!-- Axis 2 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-blue-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-users text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">2. Social Sciences & Community Development</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">Social inclusion, equity, and participatory innovation</p>
+                        <p class="subtheme-item">Governance, policy, and digital citizenship</p>
+                        <p class="subtheme-item">Cultural heritage, indigenous institutions, and social resilience</p>
+                        <p class="subtheme-item">Community‑driven development models</p>
+                    </div>
+                </div>
+
+                <!-- Axis 3 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-amber-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-amber-400">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">3. Business, Entrepreneurship & Economics</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">MSMEs, start‑ups, and innovation ecosystems</p>
+                        <p class="subtheme-item">Indigenous enterprises and community‑based business models</p>
+                        <p class="subtheme-item">Digital finance, fintech, and market access</p>
+                        <p class="subtheme-item">Sustainable and impact entrepreneurship</p>
+                    </div>
+                </div>
+
+                <!-- Axis 4 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-purple-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-purple-400">
+                        <i class="fa-solid fa-microchip text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">4. Science, Technology, Engineering & Innovation</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">AI, IoT, robotics, and smart systems</p>
+                        <p class="subtheme-item">Frugal and indigenous engineering innovations</p>
+                        <p class="subtheme-item">Infrastructure for inclusive digital transformation</p>
+                        <p class="subtheme-item">Local manufacturing and technology transfer</p>
+                        <p class="subtheme-item">Open science and research co‑creation</p>
+                        <p class="subtheme-item">Knowledge systems integration</p>
+                        <p class="subtheme-item">Research‑to‑policy and research‑to‑market pathways</p>
+                        <p class="subtheme-item">Ethics, ownership, and protection of indigenous knowledge</p>
+                    </div>
+                </div>
+
+                <!-- Axis 5 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-cyan-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-cyan-400">
+                        <i class="fa-solid fa-graduation-cap text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">5. Education & Human Capital Development</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">CBET, TVET, and lifelong learning</p>
+                        <p class="subtheme-item">Digital learning platforms and open science</p>
+                        <p class="subtheme-item">Indigenous knowledge in curricula</p>
+                        <p class="subtheme-item">Skills development for youth and women</p>
+                    </div>
+                </div>
+
+                <!-- Axis 6 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-red-500 space-y-3">
+                    <div class="flex items-center space-x-3 text-red-400">
+                        <i class="fa-solid fa-heart-pulse text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">6. One Health & Well Being</h3>
+                    </div>
+                    <div class="text-xs text-gray-300 space-y-2 pt-2">
+                        <p class="subtheme-item">Digital health systems and telemedicine</p>
+                        <p class="subtheme-item">Indigenous and alternative medicine</p>
+                        <p class="subtheme-item">Community‑based health data and surveillance</p>
+                        <p class="subtheme-item">Universal health coverage and equity</p>
+                    </div>
+                </div>
+
+                <!-- Axis 7 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-teal-500 space-y-3 md:col-span-2">
+                    <div class="flex items-center space-x-3 text-teal-400">
+                        <i class="fa-solid fa-seedling text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">7. Natural Resources, Climate Change & Sustainable Development</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-gray-300 pt-2">
+                        <p class="subtheme-item">Inclusive climate action in Africa</p>
+                        <p class="subtheme-item">Biodiversity conservation and ecosystem restoration</p>
+                        <p class="subtheme-item">Indigenous environmental stewardship</p>
+                        <p class="subtheme-item">Green technologies and circular economy</p>
+                        <p class="subtheme-item">Mining, water, forestry, and land governance</p>
+                        <p class="subtheme-item">Community participation and benefit‑sharing</p>
+                        <p class="subtheme-item">Digital monitoring and resource management systems</p>
+                        <p class="subtheme-item">Sustainable extraction and value addition</p>
+                    </div>
+                </div>
+
+                <!-- Axis 8 -->
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-indigo-500 space-y-3 md:col-span-2">
+                    <div class="flex items-center space-x-3 text-indigo-400">
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">8. Law, Peace & Justice</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs text-gray-300 pt-2">
+                        <div>
+                            <p class="font-bold text-white mb-1 uppercase tracking-wide text-[10px] text-indigo-300">Core Foundations</p>
+                            <p class="subtheme-item">Governance & Rule of Law</p>
+                            <p class="subtheme-item">Human Rights & Social Justice</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white mb-1 uppercase tracking-wide text-[10px] text-indigo-300">Mechanisms</p>
+                            <p class="subtheme-item">Conflict Resolution & Peacebuilding</p>
+                            <p class="subtheme-item">Security & Justice Systems</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white mb-1 uppercase tracking-wide text-[10px] text-indigo-300">Global Geopolitics</p>
+                            <p class="subtheme-item">Global & Emerging Issues</p>
+                            <p class="subtheme-item">Regional / Africa-Focused Issues</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call For Abstracts Blueprint Panel -->
+        <section id="call" class="max-w-4xl mx-auto px-4 py-12">
+            <div class="bg-gradient-to-br from-indigo-950/60 via-slate-900/80 to-purple-950/60 p-8 rounded-3xl border border-purple-500/10 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 space-y-6">
+                    <div class="text-center">
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white">Call for Abstracts & Poster Submissions</h2>
+                        <p class="text-xs text-purple-300 mt-1">Host Site: University of Eldoret | Assembly Frame: September 9 – 11, 2026</p>
+                    </div>
+
+                    <p class="text-xs text-gray-300 leading-relaxed text-center max-w-2xl mx-auto">
+                        The Local Organizing Committee welcomes contributions mapped directly onto any highlighted thematic track. Submitted documents will pass double-blind peer vetting.
+                    </p>
+
+                    <div class="p-6 rounded-2xl bg-black/40 border border-white/5 space-y-4">
+                        <p class="text-xs uppercase font-extrabold text-purple-400 tracking-wider flex items-center">
+                            <i class="fa-solid fa-cubes-stacked mr-2"></i> Document Structural Requirements
+                        </p>
+                        
+                        <div class="flex justify-between items-center text-xs text-gray-400 border-b border-white/5 pb-2">
+                            <span>Word Count Constraint:</span>
+                            <span class="font-bold text-white bg-purple-500/20 px-2 py-0.5 rounded text-[11px]">250 - 300 Words Only</span>
+                        </div>
+
+                        <p class="text-xs text-gray-400 font-semibold mb-2">Mandatory Abstract Sections Checklist:</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-gray-200">
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-heading text-purple-500 mr-2"></i> Title</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-circle-info text-purple-500 mr-2"></i> Background</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-bullseye text-purple-500 mr-2"></i> Objective</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-gears text-purple-500 mr-2"></i> Methodology</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center sm:col-span-2"><i class="fa-solid fa-square-poll-vertical text-purple-500 mr-2"></i> Findings & Results</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-flag text-purple-500 mr-2"></i> Conclusion</div>
+                            <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 flex items-center"><i class="fa-solid fa-key text-purple-500 mr-2"></i> Keywords</div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-purple-950/40 border border-purple-900/50 flex flex-col sm:flex-row items-center justify-between text-xs gap-3">
+                        <p class="text-gray-300 text-center sm:text-left">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i> Upon acceptance confirmation, researchers proceed to registration payment.
+                        </p>
+                        <a href="abstract-submission.html" class="bg-purple-600 hover:bg-purple-500 text-white font-bold px-5 py-2.5 rounded-xl whitespace-nowrap transition-all shadow-md">
+                            Upload Abstract
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute -bottom-20 -left-20 w-44 h-44 bg-purple-500/5 rounded-full blur-2xl"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/5 bg-black/40 py-8 text-center text-xs text-gray-500">
+            <p>&copy; 2026 U6+ Consortium Local Organizing Committee. Peer validation workflows active.</p>
+        </footer>
+
+    </div>
+
+    <!-- Three.js Engine for Double-Helix Knowledge Stream Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        let scene, camera, renderer, helixGroup;
+        let mouseX = 0, mouseY = 0;
+
+        function initHelix() {
+            const container = document.getElementById('webgl-helix-container');
+            
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+            camera.position.z = 10;
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            helixGroup = new THREE.Group();
+            scene.add(helixGroup);
+
+            // Generate double helix strand particles
+            const particleCount = window.innerWidth < 768 ? 200 : 450;
+            const geomStrand1 = new THREE.BufferGeometry();
+            const geomStrand2 = new THREE.BufferGeometry();
+            
+            const pos1 = new Float32Array(particleCount * 3);
+            const pos2 = new Float32Array(particleCount * 3);
+            
+            const length = 20; 
+            const frequency = 1.2; 
+            const radius = 2.5;
+
+            for (let i = 0; i < particleCount; i++) {
+                const t = (i / particleCount) * length - (length / 2);
+                const angle = t * frequency;
+
+                // Strand 1
+                pos1[i*3] = Math.cos(angle) * radius;
+                pos1[i*3+1] = t;
+                pos1[i*3+2] = Math.sin(angle) * radius;
+
+                // Strand 2 (offset by PI for mirror position)
+                pos2[i*3] = Math.cos(angle + Math.PI) * radius;
+                pos2[i*3+1] = t;
+                pos2[i*3+2] = Math.sin(angle + Math.PI) * radius;
+            }
+
+            geomStrand1.setAttribute('position', new THREE.BufferAttribute(pos1, 3));
+            geomStrand2.setAttribute('position', new THREE.BufferAttribute(pos2, 3));
+
+            const matStrand1 = new THREE.PointsMaterial({ color: 0xa855f7, size: 0.06, transparent: true, opacity: 0.8 });
+            const matStrand2 = new THREE.PointsMaterial({ color: 0xec4899, size: 0.06, transparent: true, opacity: 0.8 });
+
+            const mesh1 = new THREE.Points(geomStrand1, matStrand1);
+            const mesh2 = new THREE.Points(geomStrand2, matStrand2);
+
+            helixGroup.add(mesh1);
+            helixGroup.add(mesh2);
+
+            // Rotate helix vertically horizontally across screen
+            helixGroup.rotation.z = 0.5;
+
+            window.addEventListener('resize', onWindowResize);
+            document.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX - window.innerWidth / 2) / 200;
+                mouseY = (e.clientY - window.innerHeight / 2) / 200;
+            });
+
+            animate();
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Twist helix over time
+            helixGroup.rotation.y += 0.008;
+
+            // Follow mouse coordinates elegantly
+            helixGroup.position.x += (mouseX - helixGroup.position.x) * 0.05;
+            helixGroup.position.y += (-mouseY - helixGroup.position.y) * 0.05;
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('DOMContentLoaded', initHelix);
+    </script>
+</body>
+</html>

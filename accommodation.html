@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation & City Guide | U6+ 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #06050c;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        #webgl-urban-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        .content-layer {
+            position: relative;
+            z-index: 10;
+        }
+        .glass-panel {
+            background: rgba(11, 9, 22, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glow:hover {
+            box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3D Urban Infrastructure Wireframe Background Container -->
+    <div id="webgl-urban-grid"></div>
+
+    <div class="content-layer">
+        
+         <!-- Navigation Bar -->
+        <nav class="glass-nav sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-xl font-extrabold tracking-wider text-white">U6+ <span class="text-purple-500">2026</span></a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="text-purple-400 font-bold">Home</a>
+                <a href="about-consortium.html" class="hover:text-purple-400 transition-colors">The Consortium</a>
+                <a href="about-conference.html" class="hover:text-purple-400 transition-colors">Themes & Call</a>
+                <a href="accommodation.html" class="hover:text-purple-400 transition-colors">Accommodation</a>
+                <a href="contact.html" class="hover:text-purple-400 transition-colors">Contact Hub</a>
+            </div>
+            <a href="about-conference.html#call" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white text-xs font-bold px-5 py-2.5 rounded-full uppercase tracking-wider transition-all">
+                Submit Abstract
+            </a>
+        </nav>
+
+        <!-- City Showcase Section -->
+        <section id="city-profile" class="max-w-6xl mx-auto px-4 pt-16 pb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-amber-400 font-bold tracking-widest text-xs uppercase bg-amber-500/10 px-4 py-1.5 rounded-full inline-block">
+                        Host City Intelligence
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Eldoret: <span class="text-gradient-gold">The City of Champions</span>
+                    </h1>
+                    <p class="text-gray-300 text-sm md:text-base leading-relaxed text-justify">
+                        Nestled atop the scenic Uasin Gishu Plateau, Eldoret is rapidly transforming into one of East Africa’s most dynamic urban frontiers. Freshly elevated to Kenya’s fifth city, this bustling agricultural “breadbasket” beautifully balances its rich heritage with standard-setting modern growth.
+                    </p>
+                    <p class="text-gray-400 text-xs md:text-sm leading-relaxed text-justify">
+                        Famous worldwide as the high-altitude training cradle for legendary Olympic athletes, Eldoret is equally powerful as an economic engine—boasting a thriving manufacturing sector, robust financial infrastructure, a strategic transport link to East and Central Africa, and the largest concentration of healthcare and educational institutions outside the nation’s capital. Driven by an energetic, cosmopolitan population and a progressive, forward-looking local economy, Eldoret offers an unmatched launchpad where fertile opportunities, visionary real estate development, and global athletic prestige seamlessly converge.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="glass-panel p-5 rounded-2xl space-y-2">
+                        <i class="fa-solid fa-mountain-city text-amber-400 text-2xl"></i>
+                        <h4 class="text-white font-bold text-sm">Uasin Gishu Plateau</h4>
+                        <p class="text-gray-500 text-[11px]">High-altitude climate optimized for performance and wellness.</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl space-y-2">
+                        <i class="fa-solid fa-medal text-purple-400 text-2xl"></i>
+                        <h4 class="text-white font-bold text-sm">Athletic Cradle</h4>
+                        <p class="text-gray-500 text-[11px]">Global epicenter for legendary world-record track champions.</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl space-y-2">
+                        <i class="fa-solid fa-building-columns text-cyan-400 text-2xl"></i>
+                        <h4 class="text-white font-bold text-sm">Education Hub</h4>
+                        <p class="text-gray-500 text-[11px]">Concentrated research ecosystem anchor point outside Nairobi.</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl space-y-2">
+                        <i class="fa-solid fa-route text-emerald-400 text-2xl"></i>
+                        <h4 class="text-white font-bold text-sm">Strategic Corridor</h4>
+                        <p class="text-gray-500 text-[11px]">Primary highway artery linking East and Central African markets.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Accommodations Portal -->
+        <section id="booking-matrix" class="max-w-6xl mx-auto px-4 py-12">
+            <div class="text-center space-y-2 mb-12">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Finding Accommodation During the Conference</h2>
+                <p class="text-xs text-gray-400 max-w-xl mx-auto">
+                    We have partnered with premier urban hotels and executive guest hubs to secure standardized rates for all U6+ Consortium attendees.
+                </p>
+            </div>
+
+            <!-- Interactive Directory Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Partner Venue 1 -->
+                <div class="glass-panel rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 card-glow">
+                    <div class="p-5 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-md">Luxury Tier</span>
+                            <div class="flex text-[10px] text-amber-400 space-x-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">Boma Inn Eldoret</h3>
+                            <p class="text-[11px] text-gray-500 flex items-center mt-1"><i class="fa-solid fa-location-dot mr-1 text-purple-500"></i> Elgon View Area</p>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Premium luxury stay equipped with full fitness facilities, high-speed corporate fiber connections, and dedicated executive lounges.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white/5 border-t border-white/5 grid grid-cols-2 gap-2">
+                        <a href="#" class="border border-white/10 hover:bg-white/5 text-center text-[11px] font-semibold py-2 rounded-lg text-gray-300 transition-colors">Read More</a>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-500 text-center text-[11px] font-bold py-2 rounded-lg text-white transition-all">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Partner Venue 2 -->
+                <div class="glass-panel rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 card-glow">
+                    <div class="p-5 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md">Business Class</span>
+                            <div class="flex text-[10px] text-amber-400 space-x-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">The Poa Place Resort</h3>
+                            <p class="text-[11px] text-gray-500 flex items-center mt-1"><i class="fa-solid fa-location-dot mr-1 text-amber-500"></i> Nairobi Highway Junction</p>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Distinct eco-resort cabins combining indigenous architecture with top-tier accessibility to the central business hub.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white/5 border-t border-white/5 grid grid-cols-2 gap-2">
+                        <a href="#" class="border border-white/10 hover:bg-white/5 text-center text-[11px] font-semibold py-2 rounded-lg text-gray-300 transition-colors">Read More</a>
+                        <a href="#" class="bg-amber-500 hover:bg-amber-400 text-center text-[11px] font-bold py-2 rounded-lg text-black transition-all">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Partner Venue 3 -->
+                <div class="glass-panel rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 card-glow">
+                    <div class="p-5 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-md">Urban Classic</span>
+                            <div class="flex text-[10px] text-amber-400 space-x-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">Sirikwa Hotel</h3>
+                            <p class="text-[11px] text-gray-500 flex items-center mt-1"><i class="fa-solid fa-location-dot mr-1 text-cyan-500"></i> Oloo Street Corridor</p>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            A classic institutional hotel providing comprehensive tracking logistics, large conference workspaces, and secure inner courtyard wings.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white/5 border-t border-white/5 grid grid-cols-2 gap-2">
+                        <a href="#" class="border border-white/10 hover:bg-white/5 text-center text-[11px] font-semibold py-2 rounded-lg text-gray-300 transition-colors">Read More</a>
+                        <a href="#" class="bg-cyan-600 hover:bg-cyan-500 text-center text-[11px] font-bold py-2 rounded-lg text-white transition-all">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Partner Venue 4 -->
+                <div class="glass-panel rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 card-glow">
+                    <div class="p-5 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md">Campus Hub</span>
+                            <div class="flex text-[10px] text-amber-400 space-x-0.5"><i class="fa-solid fa-circle-check"></i> <span class="text-[9px] uppercase tracking-wide font-semibold ml-1">Affiliated</span></div>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">UoE Executive Lodges</h3>
+                            <p class="text-[11px] text-gray-500 flex items-center mt-1"><i class="fa-solid fa-location-dot mr-1 text-emerald-500"></i> Main Campus Grounds</p>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            On-site academic residencies designed for delegates prioritizing zero-commute access to primary plenary tracks and event panels.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white/5 border-t border-white/5 grid grid-cols-2 gap-2">
+                        <a href="#" class="border border-white/10 hover:bg-white/5 text-center text-[11px] font-semibold py-2 rounded-lg text-gray-300 transition-colors">Read More</a>
+                        <a href="#" class="bg-emerald-600 hover:bg-emerald-500 text-center text-[11px] font-bold py-2 rounded-lg text-white transition-all">Book Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Travel Support Advisory -->
+        <section class="max-w-4xl mx-auto px-4 pb-16">
+            <div class="glass-panel p-6 rounded-2xl border-l-4 border-amber-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="space-y-1">
+                    <h4 class="text-white font-bold text-sm flex items-center">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mr-2"></i> Peak Season Booking Notice
+                    </h4>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">
+                        Due to high-altitude sports operations and international delegates streaming into the newly declared city, early reservation before August is explicitly advised.
+                    </p>
+                </div>
+                <a href="mailto:hospitality@uoeld.ac.ke" class="text-xs font-bold text-amber-400 border border-amber-500/20 hover:bg-amber-500/5 px-4 py-2 rounded-xl transition-all whitespace-nowrap">
+                    Contact Transport Desk
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/5 bg-black/50 py-8 text-center text-xs text-gray-500">
+            <p>&copy; 2026 U6+ Consortium Local Organizing Committee | University of Eldoret Secretariat.</p>
+        </footer>
+
+    </div>
+
+    <!-- Three.js Engine for Urban Wireframe Topology Vector Mesh -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        let scene, camera, renderer, cityGridMesh;
+
+        function initUrbanGrid() {
+            const container = document.getElementById('webgl-urban-grid');
+
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+            
+            // Positioning camera overhead looking diagonally down at the cityscape
+            camera.position.set(0, 15, 20);
+            camera.lookAt(0, 0, 0);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            // Create a plane geometry with multiple subdivisions to act as topography terrain
+            const width = 40;
+            const height = 40;
+            const widthSegments = 30;
+            const heightSegments = 30;
+            const geometry = new THREE.PlaneGeometry(width, height, widthSegments, heightSegments);
+
+            // Displace vertices to create structural architectural city peaks
+            const posAttr = geometry.attributes.position;
+            for (let i = 0; i < posAttr.count; i++) {
+                const x = posAttr.getX(i);
+                const y = posAttr.getY(i);
+                
+                // Mathematical noise pattern to simulate structural high-rise building clusters
+                if (Math.abs(x) < 8 && Math.abs(y) < 8) {
+                    posAttr.setZ(i, Math.sin(x * 0.5) * Math.cos(y * 0.5) * 2.5 + Math.random() * 0.2);
+                } else {
+                    posAttr.setZ(i, Math.sin(x * 0.2) * 0.6); // Flat agricultural terrain outskirts
+                }
+            }
+            geometry.computeVertexNormals();
+
+            // Transform into a sharp vector grid wireframe
+            const wireframe = new THREE.WireframeGeometry(geometry);
+            const material = new THREE.LineBasicMaterial({
+                color: 0xba8fff, // Subtle high-end purple structural vectors
+                transparent: true,
+                opacity: 0.18
+            });
+
+            cityGridMesh = new THREE.LineSegments(wireframe, material);
+            cityGridMesh.rotation.x = -Math.PI / 2; // Flat relative to terrain plane
+            scene.add(cityGridMesh);
+
+            window.addEventListener('resize', onWindowResize);
+            document.addEventListener('mousemove', onMouseMove);
+
+            animate();
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        let targetX = 0;
+        function onMouseMove(e) {
+            targetX = (e.clientX - window.innerWidth / 2) * 0.0003;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Gentle panning motion simulating flyover tracking
+            cityGridMesh.rotation.z += 0.001;
+            
+            // Mouse track leaning effect
+            cityGridMesh.rotation.y += (targetX - cityGridMesh.rotation.y) * 0.05;
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('DOMContentLoaded', initUrbanGrid);
+    </script>
+</body>
+</html>
